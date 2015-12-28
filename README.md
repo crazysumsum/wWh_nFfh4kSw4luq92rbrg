@@ -34,6 +34,8 @@ cw.run();
 		you can modify the app.js to create any number of workers to fulfill your needs.
 3.	Since producer worker is not included in this project, so please use your
 		own Producer worker to seed the currency conversion task to job queue (Tube: **crazysumsum**).
+4.	Install MongoDB client and run  `mongo ds033125.mongolab.com:33125/aftership -u sam -p Abcd1234` to login the Database.
+5.	Run `db.exchange_rate.find()` or `db.exchange_rate.find({task_id:YOUR_TASK_ID})` to check the result.
 
 **beanstalk payload**
 ```
@@ -43,6 +45,3 @@ cw.run();
   "to": "USD"
 }
 ```
-
-4.	Install MongoDB client and run  `mongo ds033125.mongolab.com:33125/aftership -u sam -p Abcd1234` to login the Database.
-5.	Run `db.exchange_rate.find()` or `db.exchange_rate.find({task_id:YOUR_TASK_ID})` to check the result.
