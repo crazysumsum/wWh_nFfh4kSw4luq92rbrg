@@ -40,7 +40,7 @@ cw.run();
 **beanstalk payload**
 ```
 {
-  "task_id": [unique task id],
+  "task_id": [UNIQUE_TASK_ID],
   "from": "HKD",
   "to": "USD"
 }
